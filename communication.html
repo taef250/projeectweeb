@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Amiri:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <style>
+ 
+.button {
+  background-color:  hsl(37, 21%, 63%);
+  border: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  right: 37%;
+   transform: translate(-50%, -50%);
+   color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 0px;
+  cursor: pointer;
+
+}
+   
+ 
+
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul li {
+      float: right;
+      margin-right: 20px;
+    }
+
+    table {
+      margin-top: 20px;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تواصل</title>
+</head>
+<body>
+  
+  <ul>
+    <li style="float:right"><a href="index.html"><b>الصفحة الرئيسية</b></a></li>
+    <li style="float:right"><a href="QR.html"><b>  القران الكريم</b></a></li>
+    <li style="float:right"><a href="tlawat.html"><b>استمع </b></a></li>
+    <li style="float:right"><a href="SB.html.html"><b> سَبَّحَ</b></a></li>
+    <li style="float:right"><a href="Login.html"><b> تسجيل</b></a></li>
+    <li style="float:right"><a href="communication.html"><b> تواصل</b></a></li>
+    <div style="float:left"><a class="active"><b>وَذَكِّرْ</b></div>
+  </ul>
+
+  <table>
+    <tr>
+      <th>phone</th>
+      <th>Email</th>
+      <th>Names</th>
+    </tr>
+    <tr>
+      <td>+966581490068</td>
+      <td>431004304@stu.ut.edu.sa</td>
+      <td>مرام سالم الفحيماني</td>
+    </tr>
+    <tr>
+      <td>+966557760599</td>
+      <td>ra.911111sa@gmail.com</td>
+      <td>رهف عبدالله العنزي</td>
+    </tr>
+    <tr>
+      <td>+966534273455</td>
+      <td>431000773@stu.ut.edu.sa</td>
+      <td>طيف فايز العصيمي</td>
+    </tr>
+  </table>
+
+  <script>
+    function shuffleTableNames() {
+      var table = document.querySelector("table");
+      var rows = Array.from(table.querySelectorAll("tr")).slice(1); // exclude the header row
+      var shuffledRows = shuffleArray(rows);
+      shuffledRows.forEach(function(row) {
+        table.appendChild(row);
+      });
+    }
+
+    function shuffleArray(array) {
+      var currentIndex = array.length,
+        temporaryValue,
+        randomIndex;
+
+      while (0 !== currentIndex) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+      }
+
+      return array;
+    }
+
+    shuffleTableNames();
+  </script>
+
+<a href="https://www.onenote.com/hrd?ReturnUrl=https%3A%2F%2Fwww.onenote.com%2Fsupport%3Fproduct_id%3Dhacking_stem&GenericSignIn=true&omkt=ar-SA" class="button">Contact by email</a>
+ <br>
+ <br>
+
+
+</body>
+</html>

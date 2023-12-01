@@ -1,0 +1,72 @@
+h4{color:  rgb(105, 67, 38) ; text-align: center; text-shadow: 1px 1px; text-decoration: solid;
+}
+body{ background-color: rgb(255, 248, 238);}
+.nameList {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.nameList li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: #333;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  font-family: Arial, sans-serif;
+}
+
+.nameList li:hover {
+  background-color: #dddddd;
+}
+.nameList {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+
+    .nameList li a {
+        color: rgb(105, 67, 38); 
+        text-decoration: none; 
+        display: block; 
+        padding: 10px; 
+        margin-bottom: 5px; 
+    }
+
+    .nameList li a:hover {
+        background-color: rgb(233, 208, 173); 
+    }
+    body{
+      background-color: rgb(255, 248, 238);
+     
+  }
+  ul {
+      background-color:  hsla(36, 21%, 63%, 0.522);;
+      font-family: 'Amiri', serif;
+      list-style-type: none;
+      margin: 5px 0px 0px 6px;
+       overflow: hidden;
+     }
+   
+    li a {
+      display: block;
+      color:rgb(0, 0, 0);
+      text-align: center;
+      padding: 25px 25px;
+      text-decoration: none;
+      font-size: 25px;
+      float: right;
+      margin-right: 30px;
+  
+      }
+    
+    li a:hover:not(.active) {
+    background-color:rgb(0, 0, 0);
+    }
+    .active {
+   font-family: 'Amiri Quran', serif;
+       font-size: 35px;
+     }
